@@ -6,7 +6,7 @@ php бот ВКонтакте.
 composer install
 ```
 
-Создаем новый сервер, с обрщанием к index.php в настройках группы. Вводим данные в конфиг (app/config.php):
+Создаем новый сервер в настройках группы с адресом на index.php. И вводим данные в конфиг (app/config.php):
 - vkbot_confirm - строка для подтверждения сервера
 - vkbot_token - ключ доступа к сообществу
 - vkbot_secret - секретный ключ для сервера
@@ -16,3 +16,4 @@ composer install
 - app/Controllers/VKBotController.php - обрабатывает события и запускает нужный обработчик
 - app/VKBot/ - классы для работы с api, дополнительные инструменты
 - app/VKBot/Handlers/ - обработчики событий
+- app/Logs/vkbot.txt - лог ошибок обращения к api
